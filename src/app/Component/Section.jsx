@@ -3,10 +3,11 @@
 import React, { useRef, useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
+import 'swiper/css/effect-fade';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import './Header.css';
-import { Autoplay, Pagination, Navigation } from 'swiper/modules';
+import { Autoplay,EffectFade, Navigation, Pagination } from 'swiper/modules';
 import Header from './Header';
 
 export default function Section() {
@@ -17,25 +18,32 @@ export default function Section() {
                 <Header/>
                 </div>
                 <Swiper
-                    spaceBetween={30}
-                    centeredSlides={true}
-                    autoplay={{
-                        delay: 2500,
-                        disableOnInteraction: false,
-                    }}
-                    pagination={{
-                        clickable: false,
-                    }}
-                    navigation={false}
-                    modules={[Autoplay, Pagination, Navigation]}
-                    className="mySwiper"
-                >
-                    <SwiperSlide><img src="./image/bikee.jpg" alt="" /></SwiperSlide>
-                    <SwiperSlide><img src="./image/moto.jpg" alt="" /></SwiperSlide>
-                    <SwiperSlide><img src="./image/bikes.jpg" alt="" /></SwiperSlide>
-                    <SwiperSlide><img src="./image/biker.jpg" alt="" /></SwiperSlide>
-                    <SwiperSlide><img src="./image/mVfu30.jpg" alt="" /></SwiperSlide>
-                </Swiper>
+        spaceBetween={30}
+        autoplay={{
+            delay: 2500,
+            disableOnInteraction: false,
+          }}
+        effect={'fade'}
+        navigation={false}
+        pagination={{
+          clickable: false,
+        }}
+        modules={[Autoplay,EffectFade, Navigation, Pagination]}
+        className="mySwiper"
+      >
+        <SwiperSlide>
+          <img src="./image/bikee.jpg" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src="./image/moto.jpg" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src="./image/bikes.jpg" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src="./image/biker.jpg" />
+        </SwiperSlide>
+      </Swiper>
             </div>
     
   )
