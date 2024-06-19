@@ -32,16 +32,16 @@ export default function Section() {
         className="mySwiper"
       >
         <SwiperSlide>
-          <img src="./image/bikee.jpg" />
+          <img src="./image/bikee.jpg"/>
         </SwiperSlide>
         <SwiperSlide>
-          <img src="./image/moto.jpg" />
+          <img src="./image/moto.jpg"/>
         </SwiperSlide>
         <SwiperSlide>
-          <img src="./image/bikes.jpg" />
+          <img src="./image/bikes.jpg"/>
         </SwiperSlide>
         <SwiperSlide>
-          <img src="./image/biker.jpg" />
+          <img src="./image/biker.jpg"/>
         </SwiperSlide>
       </Swiper>
             </div>
