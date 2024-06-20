@@ -20,8 +20,8 @@ export default function Section2() {
             ease: 'power3.out',
             scrollTrigger: {
               trigger: textRef.current,
-              start: 'top 80%',
-              end: 'bottom 20%',
+              start: 'top 90%',
+              end: 'bottom 10%',
               scrub: true,
             },
           }
