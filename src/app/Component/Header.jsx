@@ -2,7 +2,7 @@
 
 export default function Header() {
     return (
-        <div className="container mx-auto">
+        <div className="container mx-auto truncate">
             <div className="flex items-center justify-between max-w-xs mx-auto sm:max-w-xl md:max-w-2xl lg:max-w-4xl xl:max-w-7xl">
                 <div>
                     <h2 className="font-serif text-xl font-bold tracking-widest text-white uppercase cursor-pointer md:text-2xl">naga motors</h2>
