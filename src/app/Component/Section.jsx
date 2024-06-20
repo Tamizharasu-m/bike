@@ -6,7 +6,7 @@ import 'swiper/css';
 import 'swiper/css/effect-fade';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
-import './Header.css';
+import './Section.css';
 import { Autoplay,EffectFade, Navigation, Pagination } from 'swiper/modules';
 import Header from './Header';
 
@@ -17,7 +17,7 @@ export default function Section() {
             <div className="absolute z-10 w-full top-8 ">
                 <Header/>
                 </div>
-                <Swiper
+                <Swiper 
         spaceBetween={30}
         autoplay={{
             delay: 2500,
@@ -29,18 +29,18 @@ export default function Section() {
           clickable: false,
         }}
         modules={[Autoplay,EffectFade, Navigation, Pagination]}
-        className="mySwiper"
+        className="mySwiper newswi"
       >
-        <SwiperSlide>
+        <SwiperSlide className="swi-slide">
           <img src="./image/bikee.jpg"/>
         </SwiperSlide>
-        <SwiperSlide>
+        <SwiperSlide className="swi-slide">
           <img src="./image/moto.jpg"/>
         </SwiperSlide>
-        <SwiperSlide>
+        <SwiperSlide className="swi-slide">
           <img src="./image/bikes.jpg"/>
         </SwiperSlide>
-        <SwiperSlide>
+        <SwiperSlide className="swi-slide">
           <img src="./image/biker.jpg"/>
         </SwiperSlide>
       </Swiper>

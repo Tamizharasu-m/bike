@@ -1,0 +1,67 @@
+"use client"
+
+import React, { useRef, useState } from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { EffectCards } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/effect-cards';
+import './Section1.css';
+
+export default function Section1() {
+    return (
+        <div className='container mx-auto h-[100vh] flex items-center bg-blue-500 rounded-tr-[50px] rounded-tl-[50px] rounded-br-[50px] rounded-bl-[50px]'>
+            <div className='max-w-xs mx-auto sm:max-w-xl md:max-w-2xl lg:max-w-4xl xl:max-w-7xl'>
+            <h2 className='text-4xl text-center capitalize mb-[40px] font-bold font-mono'>bike details</h2>
+                <Swiper
+                    effect={'cards'}
+                    grabCursor={true}
+                    modules={[EffectCards]}
+                    className="mySwiper swiper1"
+                >
+                    
+                    <SwiperSlide className="relative">
+                        <div className="text-center ">
+                            <img className="img1" src="./image/suzuki.png" />
+                            <h4 className="pt-[40px] uppercase font-serif text-xl">suzuki</h4>
+                            <div className='absolute bottom-0 left-0 right-0'><button className='bg-blue-500 w-[320px] h-[60px] uppercase text-lg font-sans tracking-widest'>enquire</button></div>
+                        </div>
+                    </SwiperSlide>
+
+                    <SwiperSlide className="relative">
+                        <div className="text-center ">
+                            <img className="img1" src="./image/r15.avif" />
+                            <h4 className="pt-[40px]">yamaha r15 v4</h4>
+                            <div className='absolute bottom-0 left-0 right-0'><button className='bg-blue-500 w-[320px] h-[60px] uppercase text-lg font-sans tracking-widest'>enquire</button></div>
+                        </div>
+                    </SwiperSlide>
+                    <SwiperSlide className="relative">
+                        <div className="text-center ">
+                            <img className="img1" src="./image/royal.webp" />
+                            <h4 className="pt-[40px]">royal enfield</h4>
+                            <div className='absolute bottom-0 left-0 right-0'><button className='bg-blue-500 w-[320px] h-[60px] uppercase text-lg font-sans tracking-widest'>enquire</button></div>
+                        </div>
+                    </SwiperSlide>
+                    <SwiperSlide className="relative">
+                        <div className="text-center ">
+                            <img className="img1" src="./image/honda.jpg" />
+                            <h4 className="pt-[40px]">honda activa</h4>
+                            <div className='absolute bottom-0 left-0 right-0'><button className='bg-blue-500 w-[320px] h-[60px] uppercase text-lg font-sans tracking-widest'>enquire</button></div>
+                        </div>
+                    </SwiperSlide>
+                    <SwiperSlide className="relative">
+                        <div className="text-center ">
+                            <img className="img1" src="./image/splendorr.webp" />
+                            <h4 className="pt-[40px] uppercase">hero splendor</h4>
+                            <div className='absolute bottom-0 left-0 right-0'><button className='bg-blue-500 w-[320px] h-[60px] uppercase text-lg font-sans tracking-widest'>enquire</button></div>
+                        </div>
+                    </SwiperSlide>
+                </Swiper>
+            </div>
+        </div>
+    )
+}
+
+
+
+
+
