@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Section2() {
     return (
-        <div className='container mx-auto h-[100vh] flex items-center truncate '>
+        <div className='container mx-auto h-[100vh] flex items-center  '>
             <div className=' max-w-xs mx-auto sm:max-w-xl md:max-w-2xl lg:max-w-4xl xl:max-w-7xl w-[100%] md:flex md:items-center'>
                 <div className=' px-[10px] text-center md:w-[50%] md:px-[20px]'>
                     <h4 className='font-mono text-2xl font-bold pb-[10px]'>Royal Enfield</h4>
