@@ -12,7 +12,7 @@ export default function Section1() {
     return (
         <div className='container mx-auto h-[100vh] flex items-center bg-blue-500 rounded-tr-[50px] rounded-tl-[50px] rounded-br-[50px] rounded-bl-[50px]'>
             <div className='max-w-xs mx-auto sm:max-w-xl md:max-w-2xl lg:max-w-4xl xl:max-w-7xl'>
-            <h2 className='text-4xl text-center capitalize mb-[40px] font-bold font-mono'>bike details</h2>
+                <h2 className='text-4xl text-center capitalize mb-[40px] font-bold font-mono'>bike details</h2>
                 <Swiper
                     effect={'cards'}
                     navigation={true}
@@ -20,7 +20,7 @@ export default function Section1() {
                     modules={[EffectCards, Navigation]}
                     className="mySwiper swiper1"
                 >
-                    
+
                     <SwiperSlide className="relative">
                         <div className="text-center ">
                             <img className="img1" src="./image/suzuki.png" />
@@ -59,6 +59,7 @@ export default function Section1() {
                     </SwiperSlide>
                 </Swiper>
             </div>
+
         </div>
     )
 }
