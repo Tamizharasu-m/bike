@@ -12,7 +12,7 @@ export default function Section2() {
     useEffect(() => {
         gsap.fromTo(
           textRef.current,
-          { opacity: 0, y: 50 },
+          { opacity: 0, y: 70 },
           {
             opacity: 1,
             y: 0,
