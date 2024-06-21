@@ -21,7 +21,7 @@ export default function Section1() {
                     className="mySwiper swiper1"
                 >
 
-                    <SwiperSlide className="relative">
+                    <SwiperSlide className="relative swiper1-slide">
                         <div className="text-center ">
                             <img className="img1" src="./image/suzuki.png" />
                             <h4 className="pt-[40px] uppercase text-xl">suzuki</h4>
@@ -29,28 +29,28 @@ export default function Section1() {
                         </div>
                     </SwiperSlide>
 
-                    <SwiperSlide className="relative">
+                    <SwiperSlide className="relative swiper1-slide">
                         <div className="text-center ">
                             <img className="img1" src="./image/r15.avif" />
                             <h4 className="pt-[40px] uppercase text-xl">yamaha r15 v4</h4>
                             <div className='absolute bottom-0 left-0 right-0'><button className='bg-blue-500 w-[320px] h-[60px] uppercase text-lg font-sans tracking-widest'>enquire</button></div>
                         </div>
                     </SwiperSlide>
-                    <SwiperSlide className="relative">
+                    <SwiperSlide className="relative swiper1-slide">
                         <div className="text-center ">
                             <img className="img1" src="./image/royal.webp" />
                             <h4 className="pt-[40px] uppercase text-xl">royal enfield</h4>
                             <div className='absolute bottom-0 left-0 right-0'><button className='bg-blue-500 w-[320px] h-[60px] uppercase text-lg font-sans tracking-widest'>enquire</button></div>
                         </div>
                     </SwiperSlide>
-                    <SwiperSlide className="relative">
+                    <SwiperSlide className="relative swiper1-slide">
                         <div className="text-center ">
                             <img className="img1" src="./image/honda.jpg" />
                             <h4 className="pt-[40px] uppercase text-xl">honda activa</h4>
                             <div className='absolute bottom-0 left-0 right-0'><button className='bg-blue-500 w-[320px] h-[60px] uppercase text-lg font-sans tracking-widest'>enquire</button></div>
                         </div>
                     </SwiperSlide>
-                    <SwiperSlide className="relative">
+                    <SwiperSlide className="relative swiper1-slide">
                         <div className="text-center ">
                             <img className="img1" src="./image/splendorr.webp" />
                             <h4 className="pt-[40px] uppercase text-xl">hero splendor</h4>

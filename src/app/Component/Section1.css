@@ -1,3 +1,5 @@
+
+
 #app { height: 100% }
 html,
 body {
@@ -41,7 +43,7 @@ body {
   
 }
 
-.swiper-slide {
+.swiper1-slide {
   border-radius: 18px;
   font-size: 22px;
   font-weight: bold;
