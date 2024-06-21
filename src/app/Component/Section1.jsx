@@ -1,18 +1,43 @@
 "use client"
 
-import React, { useRef, useState } from 'react';
+import React, {useEffect, useRef, useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { EffectCards, Navigation } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/effect-cards';
 import 'swiper/css/navigation';
 import './Section1.css';
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
+gsap.registerPlugin(ScrollTrigger);
+
 
 export default function Section1() {
+    const textRef = useRef(null);
+
+    useEffect(() => {
+        gsap.fromTo(
+          textRef.current,
+          { opacity: 0, y: 50 },
+          {
+            opacity: 1,
+            y: 0,
+            duration: 1,
+            ease: 'power3.out',
+            scrollTrigger: {
+              trigger: textRef.current,
+              start: 'top 90%',
+              end: 'bottom 10%',
+              scrub: true,
+            },
+          }
+        );
+      }, []);
+
     return (
         <div className='container mx-auto h-[100vh] flex items-center bg-blue-500 rounded-tr-[50px] rounded-tl-[50px] rounded-br-[50px] rounded-bl-[50px] truncate'>
             <div className='max-w-xs mx-auto sm:max-w-xl md:max-w-2xl lg:max-w-4xl xl:max-w-7xl'>
-                <h2 className='text-4xl text-center capitalize mb-[40px] font-bold font-mono'>bike details</h2>
+                <h2 ref={textRef} className='text-4xl text-center capitalize mb-[40px] font-bold font-mono'>bike details</h2>
                 <Swiper
                     effect={'cards'}
                     navigation={true}
