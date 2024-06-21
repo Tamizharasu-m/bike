@@ -16,22 +16,24 @@ export default function Section1() {
     const textRef = useRef(null);
 
     useEffect(() => {
-        gsap.fromTo(
-          textRef.current,
-          { opacity: 0, y: 50 },
-          {
-            opacity: 1,
-            y: 0,
-            duration: 1,
-            ease: 'power3.out',
-            scrollTrigger: {
-              trigger: textRef.current,
-              start: 'top 90%',
-              end: 'bottom 10%',
-              scrub: true,
-            },
+        const text = textRef.current;
+        const letters = text.innerText.split("");
+        text.innerHTML = letters.map(letter => letter === ' ' ? '<span>&nbsp;</span>' : `<span style="display: inline-block;">${letter}</span>`).join("");
+    
+        gsap.fromTo(text.children, {
+          opacity: 0,
+          y: 50
+        }, {
+          opacity: 1,
+          y: 0,
+          stagger: 0.05,
+          scrollTrigger: {
+            trigger: text,
+            start: 'top 80%',
+            end: 'top 20%',
+            scrub: 1
           }
-        );
+        });
       }, []);
 
     return (
