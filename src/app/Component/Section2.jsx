@@ -11,6 +11,8 @@ gsap.registerPlugin(ScrollTrigger);
 
 export default function Section2() {
     const textRef = useRef(null);
+    const textRef1 = useRef(null);
+    const textRef2 = useRef(null);
     
 
     useEffect(() => {
@@ -25,7 +27,45 @@ export default function Section2() {
             scrollTrigger: {
               trigger: textRef.current,
               start: 'top 90%',
-              end: 'bottom 10%',
+              end: 'bottom 40%',
+              scrub: true,
+            },
+          }
+        );
+      }, []);
+
+      useEffect(() => {
+        gsap.fromTo(
+          textRef1.current,
+          { opacity: 0, y: 50 },
+          {
+            opacity: 1,
+            y: 0,
+            duration: 1,
+            ease: 'power3.out',
+            scrollTrigger: {
+              trigger: textRef1.current,
+              start: 'top 90%',
+              end: 'bottom 40%',
+              scrub: true,
+            },
+          }
+        );
+      }, []);
+
+      useEffect(() => {
+        gsap.fromTo(
+          textRef2.current,
+          { opacity: 0, y: 50 },
+          {
+            opacity: 1,
+            y: 0,
+            duration: 1,
+            ease: 'power3.out',
+            scrollTrigger: {
+              trigger: textRef2.current,
+              start: 'top 90%',
+              end: 'bottom 40%',
               scrub: true,
             },
           }
